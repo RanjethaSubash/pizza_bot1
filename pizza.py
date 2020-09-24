@@ -48,7 +48,7 @@ def insert(req):
             print(amt)
             print(phone_no)
             print(topping)
-            query = "insert into testing15(pizza_name,pizza_size,crust_pizza,pizza_toppings,pizza_count,cust_name,phone_no,mail_id,address,status,payment,amt) values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);"
+            query = "insert into pizza_orders_info(pizza_name,pizza_size,crust_pizza,pizza_toppings,pizza_count,cust_name,phone_no,mail_id,address,status,payment,amt) values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);"
             val = (pizza_name, pizza_size, crust_pizza, topping, count_pizza, cust_name, phone_no, mail_id, address, status,payment, amt)
             cur_con.execute(query, val)
             con.commit()
