@@ -1,3 +1,4 @@
+# bin/detect
 from flask import Flask,request,render_template
 import MysqlConnection as connect
 app = Flask(__name__)
