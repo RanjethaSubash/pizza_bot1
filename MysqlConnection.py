@@ -1,3 +1,4 @@
+# bin/detect
 from mysql.connector import connect, errorcode, Error
 
 
